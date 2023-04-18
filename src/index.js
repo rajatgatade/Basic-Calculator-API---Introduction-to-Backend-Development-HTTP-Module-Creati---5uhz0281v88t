@@ -12,7 +12,6 @@ app.use(bodyParser.urlencoded({ extended: false }))
 
 app.use(bodyParser.json())
 // your code goes here
-
 app.get("/", (req, res) => {
   return res.json("Hello World!");
 });
@@ -113,7 +112,7 @@ app.post("/divide", (req, res) => {
     message: "The division of given numbers",
     result: div,
   });
-
+});
 
 app.listen(port, () => console.log(`App listening on port ${port}!`))
 
